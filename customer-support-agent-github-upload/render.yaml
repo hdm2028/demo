@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: customer-support-agent-portfolio-demo
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DEMO_MODE
+        value: "true"
